@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>КиноБаза - Контакты</title>
+	<title>КиноБаза - Матрица</title>
 	<meta name="description" content="КиноБаза - это портал о кино" />
 	<meta name="viewport" content="фильмы, фильмы онлайн, hd" />
 	<link rel="stylesheet" href="style.css">
@@ -28,10 +28,10 @@
 				
 				<ul class="menu">
 					<li><a href="index.html">Главная</a></li>
-					<li><a href="films.html">Фильмы</a></li>
+					<li class="selected"><a href="films.html">Фильмы</a></li>
 					<li><a href="#">Сериалы</a></li>
 					<li><a href="rating.html">Рейтинг фильмов</a></li>
-					<li class="selected"><a href="contact.html">Контакты</a></li>
+					<li><a href="contact.html">Контакты</a></li>
 				</ul>
 
 			</div>
@@ -93,17 +93,53 @@
 
 			</div>
 
-			<!-- FILMS -->
-
 			<div class="content">
 				
-				<h1>Контакты</h1>
-				<p>Отправьте ваш отзыв о портале КиноМонстр</p>
+				<h1>Матрица</h1>
 
-				<div class="send send_contact">
-					<form method="post" action="#" id="contact">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/YihPA42fdQ8" frameborder="0" allowfullscreen></iframe>
+
+				<div class="info_film_page">
+					<span class="label">Рейтинг: </span><span class="value">8.0 / 10</span>
+					<span class="label">Год: </span><span class="value">1999</span>
+					<span class="label">Режиссёры: </span><span class="value">Братья Вачовски</span>
+				</div>
+				<hr>
+				<h2>Описание Матрица</h2>
+				<div class="descriptions_film">
+					<img src="img/matrix.png">
+					Мир Матрицы — это иллюзия, существующая только в бесконечном сне обреченного человечества. Холодный мир будущего, в котором люди — всего лишь батарейки в компьютерных системах.
+					<p></p>
+					<p></p>
+					<p></p>
+					<p></p>
+				</div>
+
+
+				<hr>
+				<h2>Отзывы о Матрица</h2>
+
+				<div class="reviews">
+					<div class="review_name">
+						Сергей
+					</div>
+					<div class="review_text">
+						Отличный фильм, время пролетело не заметно.
+					</div>
+				</div>
+
+				<div class="reviews">
+					<div class="review_name">
+						Дмитрий
+					</div>
+					<div class="review_text">
+						Я с нетерпением ждал работ от Вачовски. Матрица меня впечатлил.
+					</div>
+				</div>
+
+				<div class="send">
+					<form method="post" action="#" id="review">
 						<input type="text" name="review_name" placeholder="ваше имя">
-						<input type="text" name="review_email" placeholder="ваш email">
 						<textarea name="review_text"></textarea>
 						<input class="btn" type="submit" value="отправить">
 					</form>
@@ -112,6 +148,7 @@
 			</div>
 
 		</div>
+
 
 	<footer>
 		<p>
