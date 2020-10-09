@@ -70,7 +70,7 @@ header {
 
 .logo {
 	width: 880px;
-	padding-bottom: 40px;
+	padding-bottom: 15px;
 }
 
 .logo h1, .logo h2 {
@@ -97,7 +97,7 @@ nav {
 }
 
 ul.menu {
-	float: right;
+	float: center;
 }
 
 ul.menu li {
