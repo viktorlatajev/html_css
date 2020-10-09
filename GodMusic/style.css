@@ -1,0 +1,88 @@
+* {
+	font-family: 'Russo One', sans-serif;
+}
+
+{
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-size: 1.0em;
+	background-color: #fff;
+	color: #fff;
+}
+
+p {
+	padding: 0 0 20px 0;
+	line-height: 1.7em;
+}
+
+.btn {
+	background-color: white;
+	cursor:pointer;
+}
+
+input[type="search"] {
+	float: left;
+	color: black;
+	width: 20%;
+	padding: 0.9px;
+
+}
+
+input, textarea {
+	outline: none;
+	border: none;
+	border: solid #136cb2;
+}
+
+
+header {
+	background-color: #2070C1;
+	height: 177px;
+	margin-left: -100px;
+	margin-right: -100px;
+	min-width: 900px
+}
+
+.main, .logo, nav, .site_content, footer {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.logo {
+	width: 880px;
+	padding-bottom: -50px;
+}
+
+nav {
+	width: 900px;
+	height: 46px;
+}
+
+ul.menu {
+	float: center;
+}
+
+ul.menu li {
+	float: left;
+	padding: 0 0 0 9px;
+	list-style: none;
+	margin: 1px 2px 0 0;
+}
+
+ul.menu li a {
+	display: block;
+	height: 20px;
+	padding: 6px 35px 5px 28px;
+	color: #fff;
+	text-decoration: none;
+}
+
+.site_content {
+	width: 880px;
+	overflow: hidden;
+	margin: 20px auto 0 auto;
+	background-color: white;
+}
