@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Transition несколько свойств</title>
+	<style>
+		#id1 {
+			border: 1px black solid;
+			background-color: #E869AA;
+			color: black;
+			width: 300px;
+			cursor: pointer;
+			padding: 10px;
+			font-size: 1.5em;
+			-webkit-transition: color 1s, width 1s, background-color 1s;
+			-o-transition: color 1s, width 1s, background-color 1s;
+			-moz-transition: color 1s, width 1s, background-color 1s;
+			transition: color 1s, width 1s, background-color 1s;
+		}
+
+			#id1:hover {
+				color: white;
+				width: 400px;
+				background-color: #880045;
+			}
+
+	</style>	
+</head>
+<body>
+	<div id="id1">Наведите курсор мыши</div>
+</body>
+</html>

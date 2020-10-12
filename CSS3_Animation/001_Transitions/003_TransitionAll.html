@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Transition All</title>
+	<style>
+		#id1 {
+			border: 1px black solid;
+			background-color: #E869AA;
+			color: black;
+			width: 300px;
+			cursor: pointer;
+			height: 80px;
+			padding: 10px;
+			font-size: 1.5em;
+
+			-webkit-transition: all 1s;
+			-o-transition: all 1s;
+			-moz-transition: all 1s;
+			transition: all 1s;
+		}
+
+		#id1:hover {
+			color: white;
+			width: 400px;
+			height: 200px;
+			background-color: #880045;
+		}
+
+	</style>
+</head>
+<body>
+	<div id="id1">Наведите курсор мыши</div>
+</body>
+</html>
