@@ -160,3 +160,35 @@ h2 {
 	float: right;
 }
 
+section {
+	text-align: center;
+	width: 870px;
+	padding: 0 0 0 5px;
+	float: center; 
+	background-color: #F6F6FD;
+	text-decoration: none;
+}
+
+section a {
+	text-decoration: none;
+}
+
+.music_block a {
+	text-decoration: none;
+	color: black;
+	
+}
+
+.music_block {
+	margin-bottom: 5%;
+}
+
+.music_block img {
+	border-radius: 5px;
+	border: solid 3px #dad7d5;
+	
+	
+
+}
+
+
