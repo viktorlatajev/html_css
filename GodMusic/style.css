@@ -16,6 +16,8 @@ body {
 p {
 	padding: 0 0 20px 0;
 	line-height: 1.7em;
+	text-decoration: none;
+	color: white;
 }
 
 .btn {
@@ -92,7 +94,7 @@ ul.menu li a {
 
 table {
 	width: 100%;
-	background-color: #E1DFFE
+	background-color: #F6F6FD
 }
 
 td {
@@ -105,7 +107,7 @@ td {
 
 td img {
 	padding: left;
-	width: 500px;
+	width: 200px;
 	vertical-align: middle;
 }
 
@@ -153,3 +155,8 @@ h2 {
 	letter-spacing: 0.1em;
 	text-decoration: none;
 }
+
+.sidebar {
+	float: right;
+}
+
