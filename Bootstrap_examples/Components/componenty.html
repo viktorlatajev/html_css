@@ -352,7 +352,121 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
-				<div class="dropdown btn-group"></div>
+				<div class="dropdown btn-group">
+					<button class="btn btn-info " type="button">
+						Выпадающий список
+					</button>
+					<button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"></button>
+					<div class="dropdown-menu dropdown-menu-right " aria-labellebdy="dropdownMenuButton">
+						<h6 class="dropdown-header">Имя меню</h6>
+						<a class="dropdown-item" href="#">Меню</a>
+						<a class="dropdown-item disabled" href="#">Меню</a>
+						<a class="dropdown-item" href="#">Меню</a>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="#">Меню</a>
+						<a class="dropdown-item" href="#">Меню</a>
+					</div>
+				</div>
+				<div class="dropdown btn-group">
+					<button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown">Выпадающий список</button>
+					<div class="dropdown-menu dropdown-menu-right " aria-labellebdy="dropdownMenuButton">
+						<h6 class="dropdown-header">Имя меню</h6>
+						<a class="dropdown-item" href="#">Меню</a>
+						<a class="dropdown-item disabled" href="#">Меню</a>
+						<a class="dropdown-item" href="#">Меню</a>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="#">Меню</a>
+						<a class="dropdown-item" href="#">Меню</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<h3>Пагинация формы</h3>
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<form>
+					<div class="form-group row">
+						<label class="col-3" for="exampleInputEmail1">Email адрес</label>
+						<input type="email" class="form-control col-9" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email адрес">
+						<small id="emailHelp" class="col-9 offset-3">Мы никогда не будем делиться вашей электронной почтой с кем-либо еще.</small>
+					</div>
+					<div class="form-group row">
+						<label class="col-3" for="exampleInputPassword1">пароль</label>
+						<input readonly type="password" class="form-control col-9" id="exampleInputPassword1" placeholder="пароль">
+					</div>
+					<div class="form-group">
+						<label for="exampleFormControlSelect1">Example select</label>
+						<select class="form-control" id="exampleFormControlSelect1">
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+							<option>5</option>
+						</select>
+					</div>
+					<div class="form-row">
+						
+						<div class="form-check-inline">
+							<input type="checkbox" class="form-check-input" id="exampleCheck1" disabled>
+							<label class="form-check-label" for="exampleCheck1">1</label>
+						</div>
+						<div class="form-check-inline">
+							<input type="checkbox" class="form-check-input" id="exampleCheck1"g>
+							<label class="form-check-label" for="exampleCheck1">2</label>
+						</div>
+					</div>
+					<button type="submit" class="btn btn-primary">Submit</button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<h3>Инпут группы</h3>
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<form>
+					<div class="input-group mb-3">
+						<input type="email" class="form-control" placeholder="Email адрес" aria-describedby="basic-addon1">
+						<div class="input-group-append">
+							<button type="button" class="btn btn-primary">Наша кнопка</button>
+							<button type="button" class="btn btn-outline-primary dropdown-toggle" data-toggle="dropdown">Наша кнопка</button>
+							<div class="dropdown-menu">
+								<div class="dropdown-item">menu</div>
+								<div class="dropdown-item">menu</div>
+								<div class="dropdown-item">menu</div>
+								<div class="dropdown-item">menu</div>
+							</div>
+						</div>
+					</div>
+					<div class="input-group mb-3">
+						<input type="password" class="form-control" placeholder="пароль" aria-describedby="basic-addon2">
+						<div class="input-group-append">
+							<span class="input-gruop-text" id="basic-addon2">@example.com</span>
+						</div>
+					</div>
+					<div class="input-group mb-3">
+						<div class="input-group-prepend">
+							<div class="input-gruop-text">
+								<input type="checkbox" aria-label="Checkbox for following text input">
+							</div>
+						</div>
+						<input type="text" class="form-control" aria-label="Text input with checkbox">
+					</div>
+					<div class="input-group mb-3">
+						<div class="input-group-prepend">
+							<div class="input-group-text">
+								Что-то там
+							</div>
+						</div>
+						<input type="text" class="form-control">
+						<input type="text" class="form-control">
+					</div>
+					<button type="submit" class="btn btn-primary">Submit</button>
+				</form>
 			</div>
 		</div>
 	</div>
