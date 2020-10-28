@@ -7,123 +7,231 @@
 	<meta name="description" content="КиноБаза - это портал о кино" />
 	<meta name="viewport" content="фильмы, фильмы онлайн, hd" />
 	<!-- CSS -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
 	<!--  -->
 	
-	<div class="main">
-		
-		<header>
-			<div class="logo">
-				<div class="logo_text">
-					<h1><a href="index.html">КиноБаза</a></h1>
-					<h2>Кино - наша страсть!</h2>
-				</div>
-			</div>
-
-			<!-- MENU -->
-
-			<nav>
-				
-				<ul class="menu">
-					<li><a href="index.html">Главная</a></li>
-					<li><a href="films.html">Фильмы</a></li>
-					<li><a href="serials.html">Сериалы</a></li>
-					<li><a href="rating.html">Рейтинг фильмов</a></li>
-					<li class="selected"><a href="contact.html">Контакты</a></li>
-				</ul>
-
-			</nav>
-		
-		</header>
-
-		<!-- CONTENT -->
-
-		<div class="site_content">
+	<div class="conatiner-fluid">
+		<div class="row">
 			
-			<aside>
-				
-				<!-- SEARCH -->
-
-				<div class="sidebar">
-					<h2>Поиск</h2>
-					<form method="post" action="#" id="search_form" >
-						<input type="search" name="search_field" placeholder="ваш запрос" />
-						<input type="submit" class="btn" value="найти" />
-					</form>
-				</div>
-
-				<!-- SIGN IN/UP -->
-
-				<div class="sidebar">
-					<h2>Вход</h2>
-					<form method="post" action="#" id="login">
+			<nav role="navigation" class="navbar navbar-inverse">
+				<div class="container">
+					
+					<div class="navbar-header header">
 						
-						<input type="text" name="login_field" placeholder="логин" />
-						<input type="password" name="password_field" placeholder="пароль" />
-						<input type="submit" class="btn" value="вход" />
-						<div class="labels_passreg_text">
-							<span><a href="#">забыли пароль?</a></span> | <span><a href="#">регистрация</a></span>
+						<div class="container">
+							
+							<div class="row">
+								
+								<div class="col-lg-12">
+									<h1><a href="index.html">КиноБаза</a></h1>
+									<p>Кино - наша страсть!</p>
+								</div>
+							</div>
 						</div>
 
-					</form>
-				</div>
+						<button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
 
-				<!-- NEWS -->
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
 
-				<div class="sidebar">
-					<h2>Новости</h2>
-					<span>31.02.2018</span>
-					<p>Мы запустили расширенный поиск</p>
-					<a href="#">читать</a>
-				</div>
+						</button>
+					</div>
+						<div id="navbarCollapse" class="collapse navbar-collapse navbar-right">
+						
+							<ul class="nav nav-pills">
+								<li><a href="index.html">Главная</a></li>
+								<li><a href="films.html">Фильмы</a></li>
+								<li><a href="serials.html">Сериалы</a></li>
+								<li><a href="rating.html">Рейтинг фильмов</a></li>
+								<li class="active"><a href="contact.html">Контакты</a></li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</div>
 
-				<!-- RATING -->
-
-				<div class="sidebar">
-					<h2>Рейтинг фильмов</h2>
-					<ul>
-						<li><a href="show.html">Интерстеллар</a><span class="rating_sidebar">8.1</span></li>
-						<li><a href="show2.html">Матрица</a><span class="rating_sidebar">8.0</span></li>
-						<li><a href="show3.html">Безумный Макс</a><span class="rating_sidebar">7.5</span></li>
-						<li><a href="show4.html">Облачный атлас</a><span class="rating_sidebar">7.4</span></li>
-					</ul>
-				</div>
-
-			</aside>
-
-			<!-- FILMS -->
-
-			<section>
+		<div class="wrapper">
+			
+			<div class="container">
 				
-				<h1>Контакты</h1>
-				<p>Отправьте ваш отзыв о портале КиноМонстр</p>
-
-				<div class="send send_contact">
-					<form method="post" action="#" id="contact">
-						<input type="text" name="review_name" placeholder="ваше имя">
-						<input type="text" name="review_email" placeholder="ваш email">
-						<textarea name="review_text"></textarea>
-						<input class="btn" type="submit" value="отправить">
+				<div class="row">
+					
+				<div class="col-lg-9 col-lg-push-3">
+						
+					<form role="search" class="visible-xs">
+						<div class="form-group">
+							<div class="input-group">
+								<input type="search" class="form-control input-lg" placeholder="Ваш запрос">
+								<div class="input-group-btn">
+									<button class="btn btn-default btn-lg" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+								</div>
+							</div>
+						</div>
 					</form>
+
+					<h1>Контакты</h1>
+					<hr>
+
+					<p>Отправьте ваш отзыв о портале КиноБаза</p>
+
+
+					<form>
+						<div class="form-group">
+							<input type="text" placeholder="ваше имя" class="form-control input-lg">
+						</div>
+						<div class="form-group">
+							<input type="email" placeholder="ваше e-mail" class="form-control input-lg">
+						</div>
+						<div class="form-group">
+							<textarea class="form-control"></textarea>
+						</div>
+						<button class="btn btn-lg btn-button pull-right">отправить</button>
+					</form>
+
+					<div class="margin-8 clear"></div>
+
 				</div>
 
-			</section>
+				<div class="col-lg-3 col-lg-pull-9">
+					
+					<div class="panel panel-info hidden-xs">
+						<div class="panel-heading"><div class="sidebar-header">Поиск</div></div>
+						<div class="panel-body">
+							<form role="search">
+								<div class="form-group">
+									<div class="input-group">
+										<input type="search" class="form-control input-lg" placeholder="Ваш запрос">
+										<div class="input-group-btn">
+											<button class="btn btn-default btn-lg" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+
+					<div class="panel panel-info hidden-xs">
+						<div class="panel-heading"><div class="sidebar-header">Вход</div></div>
+						<div class="panel-body">
+
+							<form role="form">
+								<div class="form-group">
+									<input type="text" class="form-control input-lg" placeholder="Логин">
+								</div>
+								<div class="form-group">
+									<input type="password" class="form-control input-lg" placeholder="Пароль">
+								</div>
+
+								<button type="submit" class="btn btn-button pull-right">вход</button>
+
+							</form>
+						</div>
+					</div>
+
+					<div class="panel panel-info hidden-xs">
+						<div class="panel-heading"><div class="sidebar-header">Новости</div></div>
+						<div class="panel-body">
+							<p>31.02.2017</p>
+							<p>Мы запустили новый сервис</p>
+						</div>
+					</div>
+
+					<div class="panel panel-info">
+						<div class="panel-heading"><div class="sidebar-header">Рейтинг фильмов</div></div>
+						<div class="panel-body">
+							
+							<ul class="list-group">
+								<li class="list-group-item list-group-warning">
+									<span class="badge">8.9</span>
+									<a href="show.html">Интерстеллар</a>
+								</li>
+
+								<li class="list-group-item list-group-warning">
+									<span class="badge">8.7</span>
+									<a href="show3.html">Безумный Макс</a>
+								</li>
+
+								<li class="list-group-item list-group-warning">
+									<span class="badge">8.3</span>
+									<a href="show2.html">Матрица</a>
+								</li>
+
+								<li class="list-group-item list-group-warning">
+									<span class="badge">8.1</span>
+									<a href="show4.html">Облачный атлас</a>
+								</li>
+
+								<li class="list-group-item list-group-warning">
+									<span class="badge">8.9</span>
+									<a href="show.html">Интерстеллар</a>
+								</li>
+
+								<li class="list-group-item list-group-warning">
+									<span class="badge">8.7</span>
+									<a href="show3.html">Безумный Макс</a>
+								</li>
+
+								<li class="list-group-item list-group-warning">
+									<span class="badge">8.3</span>
+									<a href="show2.html">Матрица</a>
+								</li>
+
+								<li class="list-group-item list-group-warning">
+									<span class="badge">8.1</span>
+									<a href="show4.html">Облачный атлас</a>
+								</li>
+
+							</ul>
+
+						</div>
+					</div>
+
+				</div>
+
+				</div>
+
+			</div>
+
+			<div class="clear"></div>
 
 		</div>
 
+		<!-- CONTENT -->
+
+		
+				<!-- SIGN IN/UP -->
+
+				
+
+				<!-- NEWS -->
+
+				
+				<!-- RATING -->
+
+				
+
+			
+
+			<!-- FILMS -->
+
+
+
+		</div>
+
+
 	<footer>
-		<p>
-			<a href="index.html">Главная</a>
-			<a href="films.html">Фильмы</a>
-			<a href="serials.html">Сериалы</a>
-			<a href="rating.html">Рейтинг</a>
-			<a href="contact.html">Контакты</a>
-		</p>
-		<p>kinopoisk.ru</p>
+
+		<div class="container">
+			<p class="text-center"> <a href="https://www.kinopoisk.ru/">KinoBaza</a> </p>
+		</div>
+		
 	</footer>
 
 	</div>
@@ -132,4 +240,5 @@
 	<!-- jQuery and JS bundle w/ Popper.js -->
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
 </html>
